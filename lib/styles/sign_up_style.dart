@@ -1,34 +1,17 @@
 import 'package:flutter/material.dart';
 
-class SignUpStyles {
-  static const TextStyle titleStyle = TextStyle(
-    fontSize: 28,
-    fontWeight: FontWeight.bold,
-    color: Colors.blue,
-  );
-
-  static final InputDecoration textFieldDecoration = InputDecoration(
-    border: OutlineInputBorder(),
-    labelText: 'Email',
-  );
-
-  static final InputDecoration usernameFieldDecoration = InputDecoration(
-    border: OutlineInputBorder(),
-    labelText: 'Username',
-  );
-
-  static final InputDecoration passwordFieldDecoration = InputDecoration(
-    border: OutlineInputBorder(),
-    labelText: 'Password',
-  );
-
-  static final InputDecoration confirmPasswordFieldDecoration = InputDecoration(
-    border: OutlineInputBorder(),
-    labelText: 'Confirm Password',
-  );
-
-  static final ButtonStyle elevatedButtonStyle = ElevatedButton.styleFrom(
-    padding: EdgeInsets.symmetric(vertical: 15),
-    textStyle: TextStyle(fontSize: 18),
-  );
-}
+final TextStyle kAppBarTextStyle = TextStyle(fontSize: 20, color: Colors.white);
+final TextStyle kButtonTextStyle = TextStyle(fontSize: 18, color: Colors.white);
+final TextStyle kLinkTextStyle = TextStyle(fontSize: 16, color: Colors.blue);
+final InputDecoration kInputDecoration = InputDecoration(
+  border: OutlineInputBorder(),
+  labelStyle: TextStyle(fontSize: 16, color: Colors.grey),
+);
+final ButtonStyle kButtonStyle = ElevatedButton.styleFrom(
+  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+);
+final TextStyle kTitleTextStyle = TextStyle(
+  fontSize: 32,
+  fontWeight: FontWeight.bold,
+  color: Colors.black,
+);

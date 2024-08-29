@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
 
-class HomeStyles {
-  static const TextStyle titleStyle = TextStyle(
-    fontSize: 28,
-    fontWeight: FontWeight.bold,
-    color: Colors.blue,
-  );
-}
+final TextStyle kAppBarTextStyle = TextStyle(fontSize: 20, color: Colors.white);
+final TextStyle kBodyTextStyle = TextStyle(fontSize: 18, color: Colors.black);
