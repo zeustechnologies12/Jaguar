@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:flutter_web_plugins/url_strategy.dart';
+import 'package:jaguar_app/theme/theme.dart';
 import 'screens/login.dart';
 import 'screens/sign_up.dart';
 import 'screens/home.dart';
@@ -25,7 +25,7 @@ final GoRouter _router = GoRouter(
 );
 
 void main() {
-  usePathUrlStrategy();
+  //usePathUrlStrategy();
   runApp(MyApp());
 }
 
@@ -33,6 +33,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      themeMode: ThemeMode.system,
+      theme: TAppTheme.darkTheme,
+      darkTheme: TAppTheme.lightTheme,
       routerConfig: _router,
       title: 'Jaguar App',
     );

@@ -20,6 +20,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  flutter_native_splash: ^2.3.2
+
   # Cupertino Icons is used for iOS-style icons in your app.
   cupertino_icons: ^1.0.6
 
@@ -42,8 +44,8 @@ flutter:
   uses-material-design: true
 
   # To add assets like images, audio, or fonts, uncomment and specify them here.
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+   - assets/logo.png
   #   - images/a_dot_ham.jpeg
 
   # Example for adding custom fonts to your app.
