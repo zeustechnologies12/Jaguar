@@ -19,14 +19,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_native_splash: ^2.4.1
 
   # Cupertino Icons is used for iOS-style icons in your app.
   cupertino_icons: ^1.0.6
-
- 
    
   go_router: ^14.2.7
 
+flutter_native_splash:
+  color: "#ffffff" # Background color for the splash screen
+  image: assets/images/article1.jpeg # Path to the splash image
+  android: true
+  ios: true
 # Dev dependencies are only used during development and testing.
 dev_dependencies:
   flutter_test:
