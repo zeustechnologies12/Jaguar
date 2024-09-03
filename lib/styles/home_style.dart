@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
 
-final TextStyle kAppBarTextStyle = TextStyle(fontSize: 20, color: Colors.white);
-final TextStyle kBodyTextStyle = TextStyle(fontSize: 18, color: Colors.black);
+final Color kIconColor = Colors.grey;
+final Color kSelectedItemColor = Colors.blue;
+
+final TextStyle kBottomNavBarTextStyle = TextStyle(
+  fontSize: 14,
+  fontWeight: FontWeight.bold,
+);
