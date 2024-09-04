@@ -45,7 +45,7 @@ final GoRouter _router = GoRouter(
 );
 
 void main() {
-  //usePathUrlStrategy();
+  usePathUrlStrategy();
   runApp(MyApp());
 }
 
