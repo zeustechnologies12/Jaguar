@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
-import 'screens/login.dart';
-import 'screens/sign_up.dart';
-import 'screens/home.dart';
-import 'screens/chat.dart';
-import 'screens/my_booking.dart';
-import 'screens/my_account.dart';
+import 'package:go_router/go_router.dart';
+
 import 'screens/about.dart';
+import 'screens/chat.dart';
+import 'screens/home.dart';
+import 'screens/login.dart';
+import 'screens/my_account.dart';
+import 'screens/my_booking.dart';
+import 'screens/sign_up.dart';
 
 // Define the router outside the main function
 final GoRouter _router = GoRouter(

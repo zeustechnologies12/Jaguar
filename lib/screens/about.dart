@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
-import '../styles/about_style.dart';
+
 import '../components/bottom_navigation.dart'; // Import the bottom navigation widget
+import '../styles/about_style.dart';
 
 class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('About Us', style: kAppBarTitleStyle),
+        title: const Text('About Us', style: kAppBarTitleStyle),
         backgroundColor: kAppBarColor,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
+      body: const Padding(
+        padding: EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -47,8 +48,8 @@ class AboutPage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar:
-          BottomNavigation(selectedIndex: 4), // Set the index for the About tab
+      bottomNavigationBar: const BottomNavigation(
+          selectedIndex: 4), // Set the index for the About tab
     );
   }
 }

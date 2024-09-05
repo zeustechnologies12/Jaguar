@@ -20,7 +20,7 @@ const kPageTitleStyle = TextStyle(
 final ButtonStyle kChatButtonStyle = ElevatedButton.styleFrom(
   backgroundColor: Colors.blue, // Background color
   foregroundColor: Colors.white, // Text color
-  padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 15.0),
+  padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 15.0),
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(30.0),
   ),

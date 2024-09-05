@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
 import '/styles/sign_up_style.dart';
 
 class SignUpPage extends StatelessWidget {
@@ -18,7 +19,7 @@ class SignUpPage extends StatelessWidget {
               'JAGUAR',
               style: kTitleTextStyle,
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextField(
               decoration:
                   kInputDecoration.copyWith(labelText: 'Email/Username'),
@@ -32,7 +33,7 @@ class SignUpPage extends StatelessWidget {
                   kInputDecoration.copyWith(labelText: 'Confirm Password'),
               obscureText: true,
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 context.go('/login');

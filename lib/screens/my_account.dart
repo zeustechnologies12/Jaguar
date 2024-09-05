@@ -1,18 +1,18 @@
-// my_account.dart
 import 'package:flutter/material.dart';
-import '../styles/my_account_style.dart';
+
 import '../components/bottom_navigation.dart'; // Import the bottom navigation widget
+import '../styles/my_account_style.dart';
 
 class MyAccountPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Account', style: kAppBarTitleStyle),
+        title: const Text('My Account', style: kAppBarTitleStyle),
         backgroundColor: kAppBarColor,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
+      body: const Padding(
+        padding: EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -43,7 +43,7 @@ class MyAccountPage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigation(
+      bottomNavigationBar: const BottomNavigation(
           selectedIndex: 3), // Set the index for the My Account tab
     );
   }

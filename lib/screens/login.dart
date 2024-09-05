@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
 import '/styles/login_style.dart';
 
 class LoginPage extends StatelessWidget {
@@ -18,7 +19,7 @@ class LoginPage extends StatelessWidget {
               'JAGUAR',
               style: kTitleTextStyle,
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextField(
               decoration:
                   kInputDecoration.copyWith(labelText: 'Email/Username'),
@@ -27,7 +28,7 @@ class LoginPage extends StatelessWidget {
               decoration: kInputDecoration.copyWith(labelText: 'Password'),
               obscureText: true,
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 context.go('/home');
@@ -42,7 +43,7 @@ class LoginPage extends StatelessWidget {
               child: Text('Don\'t have an account? Sign up',
                   style: kLinkTextStyle),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text('Or login with', style: kBodyTextStyle),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
