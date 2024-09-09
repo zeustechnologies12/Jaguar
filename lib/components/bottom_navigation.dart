@@ -1,12 +1,8 @@
 // bottom_navigation.dart
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
 import '../styles/home_style.dart';
-import '../screens/chat.dart';
-import '../screens/my_booking.dart';
-import '../screens/home.dart'; // Updated import
-import '../screens/my_account.dart';
-import '../screens/about.dart';
 
 class BottomNavigation extends StatefulWidget {
   final int selectedIndex;
@@ -53,7 +49,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      items: <BottomNavigationBarItem>[
+      items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(Icons.chat, color: kIconColor),
           label: 'Chat',
