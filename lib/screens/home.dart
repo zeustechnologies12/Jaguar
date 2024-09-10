@@ -1,16 +1,23 @@
 import 'package:flutter/material.dart';
-import '/styles/home_style.dart';
+
+import '../components/bottom_navigation.dart'; // Import your bottom navigation widget
+import '../styles/home_style.dart'; // Import the styling file
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Home', style: kAppBarTextStyle),
-      ),
+    return const Scaffold(
+      backgroundColor:
+          kBackgroundColor, // Use the background color from the style
       body: Center(
-        child: Text('Welcome to the Home Page!', style: kBodyTextStyle),
+        child: Text(
+          'Home Page Content Here',
+          style: kPageTitleStyle,
+        ), // Use the title style from the style
       ),
+      bottomNavigationBar: BottomNavigation(
+        selectedIndex: 2,
+      ), // Use BottomNavigation widget
     );
   }
 }

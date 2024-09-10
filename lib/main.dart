@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
-import 'screens/login.dart';
-import 'screens/sign_up.dart';
+import 'package:go_router/go_router.dart';
+
+import 'screens/about.dart';
+import 'screens/chat.dart';
 import 'screens/home.dart';
+import 'screens/login.dart';
+import 'screens/my_account.dart';
+import 'screens/my_booking.dart';
+import 'screens/sign_up.dart';
 
 // Define the router outside the main function
 final GoRouter _router = GoRouter(
@@ -14,12 +19,28 @@ final GoRouter _router = GoRouter(
       builder: (context, state) => LoginPage(),
     ),
     GoRoute(
+      path: '/signup',
+      builder: (context, state) => SignUpPage(),
+    ),
+    GoRoute(
       path: '/home',
       builder: (context, state) => HomePage(),
     ),
     GoRoute(
-      path: '/signup',
-      builder: (context, state) => SignUpPage(),
+      path: '/chat',
+      builder: (context, state) => ChatPage(),
+    ),
+    GoRoute(
+      path: '/my_bookings',
+      builder: (context, state) => MyBookingsPage(),
+    ),
+    GoRoute(
+      path: '/my_account',
+      builder: (context, state) => MyAccountPage(),
+    ),
+    GoRoute(
+      path: '/about',
+      builder: (context, state) => AboutPage(),
     ),
   ],
 );
